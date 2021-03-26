@@ -10,8 +10,8 @@
 					<div class="card-body">
 						@include('includes.message')
 <table class="table table-bordered table-hover">
-	<thead>
-	<th>#</th>
+	<thead class="table-dark">
+	<th>Student Id</th>
 	<th>Name</th>
 	<th>Reg no</th>
 	<th>Location</th>
@@ -25,8 +25,8 @@
 			<td>{{$student->regno}}</td>
 			<td>{{$student->location}}</td>
 			<td>
-				<a class="btb btn-primary btn-sm" href="{{route('edit',$student->id)}}">Edit</a>
-				<a class="btb btn-danger btn-sm" href="{{route('remove',$student->id)}}">Delete</a>
+				<a class="btn btn-primary btn-lg" href="{{route('edit',$student->id)}}">Edit</a>
+				<a class="btn btn-danger btn-lg" href="{{route('remove',$student->id)}}">Delete</a>
 			</td>
 		</tr>
 		@endforeach

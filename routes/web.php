@@ -17,6 +17,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/test', ['as'=>'testing', function(){
+    return view('test');
+}]);
+Route::get('redirect', function(){
+    return redirect()->route('testing');
+});
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/addstudent', 'StudentController@addstudent')->name('addstudent');
 Route::post('/addstudent', 'StudentController@poststudent')->name('poststudent');

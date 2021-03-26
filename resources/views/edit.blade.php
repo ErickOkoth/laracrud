@@ -17,7 +17,7 @@
 							</div>
 							<div class="form-group">
 								<label for="pwd">Reg no:</label>
-								<input type="text" class="form-control" id="pwd" name="regno" value="{{$student->regno}}" required>
+								<input type="text" class="form-control" id="pwd" name="regno" value="{{$student->regno}}" disabled required>
 							</div>
 							<div class="form-group">
 								<label for="pwd">Location:</label>
